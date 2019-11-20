@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:id="@+id/tvke"
+        android:text="Ke:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Spinner 
+        android:id="@+id/sp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toEndOf="@+id/tvke" />
+    
+    <TextView 
+        android:id="@+id/tvpesan"
+        android:text="Pesan:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp" />
+    
+    <EditText 
+        android:id="@+id/etpesan"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpesan" />
+    
+    <Button 
+        android:id="@+id/btkirim"
+        android:text="Kirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpesan" />
+
+</RelativeLayout>

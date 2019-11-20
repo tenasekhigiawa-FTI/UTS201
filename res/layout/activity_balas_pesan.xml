@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:id="@+id/tvto"
+        android:text="Dari:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/tvtopesan"
+        android:text="Tes"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/tvto" />
+    
+    <TextView 
+        android:id="@+id/tvfrom"
+        android:text="Balas:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tvtopesan" />
+    
+    <EditText 
+        android:id="@+id/etfrompesan"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtopesan" />
+    
+    <Button 
+        android:id="@+id/btkirim"
+        android:text="Kirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etfrompesan" />
+
+</RelativeLayout>

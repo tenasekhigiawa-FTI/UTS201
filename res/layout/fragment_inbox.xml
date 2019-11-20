@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button 
+        android:id="@+id/btkirim"
+        android:text="Buat pesan baru"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+    
+    <TextView 
+        android:id="@+id/tvtext"
+        android:text="Total inbox: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/btkirim" />
+    
+    <TextView 
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btkirim"
+        android:layout_toEndOf="@+id/tvtext" />
+    
+    <ListView
+        android:id="@+id/listpesan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtext" />
+
+</RelativeLayout>
